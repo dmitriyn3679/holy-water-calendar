@@ -3,6 +3,7 @@ export const styles = {
     padding: 0,
     backgroundColor: 'transparent',
     border: 0,
+    cursor: 'pointer',
   },
   
   icon: {

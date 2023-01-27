@@ -10,7 +10,7 @@ export const Day = ({ date }) => {
   const currentDate = date.format('DD.MM.YYYY');
   const visibleDate = useSelector(state => state.date);
   const events = useSelector(state => state.events);
-  const today = new Date().toLocaleDateString();
+  const today = dayjs().format('DD.MM.YYYY');
   const weekday = new Date(date)
     .toLocaleString('en-US', {weekday: 'short'});
   

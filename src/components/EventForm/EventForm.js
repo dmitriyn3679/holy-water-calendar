@@ -100,7 +100,7 @@ export const EventForm = ({ closeModal }) => {
         variant="standard"
         fullWidth
         multiline
-        rows={3}
+        // rows={2}
       />
       <div className="event-form__date-time-group">
         <LocalizationProvider
