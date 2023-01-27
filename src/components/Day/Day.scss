@@ -1,0 +1,29 @@
+@import "../../styles/utils";
+
+.day {
+  min-height: 120px;
+  background-color: white;
+  padding: 10px;
+  font-weight: 600;
+  box-sizing: border-box;
+
+  &--disabled {
+    color: $secondary;
+  }
+
+  &--today {
+    background-color: $green;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+
+  &__events {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+}
