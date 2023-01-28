@@ -1,7 +1,7 @@
+import { useDispatch } from "react-redux";
+import { actions as modalActions } from "../../features/modal";
+import { actions as selectedActions } from "../../features/selected";
 import './Event.scss';
-import {useDispatch} from "react-redux";
-import {actions as modalActions} from "../../features/modal";
-import {actions as selectedActions} from "../../features/selected";
 
 export const Event = ({event}) => {
   const dispatch = useDispatch();

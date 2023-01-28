@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit'
+import { configureStore } from '@reduxjs/toolkit';
 import dateReducer from '../features/date';
 import eventsReducer from '../features/events';
 import modalReducer from '../features/modal';
@@ -10,5 +10,5 @@ export const store = configureStore({
     events: eventsReducer,
     modal: modalReducer,
     selected: selectedReducer,
-  }
-})
+  },
+});

@@ -1,24 +1,23 @@
-import {Button, IconButton, TextField, Typography} from "@mui/material";
-import {LocalizationProvider} from "@mui/x-date-pickers";
+import { useMemo, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { actions as eventActions } from "../../features/events";
+import { actions as selectedActions } from "../../features/selected";
+import { Button, IconButton, TextField, Typography } from "@mui/material";
+import { LocalizationProvider } from "@mui/x-date-pickers";
 import { DatePicker } from '@mui/x-date-pickers/DatePicker';
 import { TimePicker } from '@mui/x-date-pickers/TimePicker';
-import {AdapterDayjs} from "@mui/x-date-pickers/AdapterDayjs";
-import dayjs from "dayjs";
-import {useMemo, useState} from "react";
+import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import DeleteIcon from '@mui/icons-material/Delete';
-import './EventForm.scss'
-import {useDispatch, useSelector} from "react-redux";
-import {actions as eventActions} from "../../features/events";
-import {actions as selectedActions} from "../../features/selected";
+import dayjs from "dayjs";
 import _ from 'lodash';
+import './EventForm.scss'
 
 export const EventForm = ({ closeModal }) => {
+  const dispatch = useDispatch();
   const selected = useSelector(state => state.selected);
   const [title, setTitle] = useState(selected.title || '');
   const [description, setDescription] = useState(selected.description || '');
   const [dateTime, setDateTime] = useState(dayjs(selected.dateTime) || dayjs())
-  
-  const dispatch = useDispatch();
   
   const isValid = useMemo(() => {
     if (!title) {
@@ -84,7 +83,7 @@ export const EventForm = ({ closeModal }) => {
         variant="h5"
         component="h2"
       >
-        Create event
+        {isSelected ? 'Update event' : 'Create event'}
       </Typography>
       <TextField
         label="Title *"
@@ -100,7 +99,6 @@ export const EventForm = ({ closeModal }) => {
         variant="standard"
         fullWidth
         multiline
-        // rows={2}
       />
       <div className="event-form__date-time-group">
         <LocalizationProvider

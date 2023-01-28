@@ -1,10 +1,10 @@
-import './Day.scss';
+import { useMemo } from "react";
+import { useSelector } from "react-redux";
+import { Event } from "../Event";
 import classNames from "classnames";
 import dayjs from "dayjs";
-import {useSelector} from "react-redux";
-import {useMemo} from "react";
 import _ from 'lodash';
-import {Event} from "../Event";
+import './Day.scss';
 
 export const Day = ({ date }) => {
   const currentDate = date.format('DD.MM.YYYY');

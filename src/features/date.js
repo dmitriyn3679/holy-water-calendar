@@ -1,6 +1,6 @@
-import {initialDate} from "../helpers/initialDate";
-import {createSlice} from "@reduxjs/toolkit";
-import {getFromLocalStorage} from "../helpers/getFromLocalStorage";
+import { initialDate } from '../helpers/initialDate';
+import { createSlice } from '@reduxjs/toolkit';
+import { getFromLocalStorage } from '../helpers/getFromLocalStorage';
 
 const initialState = getFromLocalStorage('visibleDate') || initialDate;
 
@@ -19,10 +19,10 @@ const dateSlice = createSlice({
         state.month = 11;
         state.year -= 1;
         localStorage.setItem('visibleDate', JSON.stringify(state));
-    
+
         return;
       }
-  
+
       state.month -= 1;
       localStorage.setItem('visibleDate', JSON.stringify(state));
     },
@@ -31,10 +31,10 @@ const dateSlice = createSlice({
         state.month = 0;
         state.year += 1;
         localStorage.setItem('visibleDate', JSON.stringify(state));
-        
+
         return;
       }
-  
+
       state.month += 1;
       localStorage.setItem('visibleDate', JSON.stringify(state));
     },

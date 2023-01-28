@@ -1,13 +1,14 @@
-import {Button} from "@mui/material";
-import {styles} from "./customize";
+import { useDispatch, useSelector } from "react-redux";
+import { actions as modalActions } from "../../features/modal";
+import { DatePickerApp } from "../DatePickerApp";
+import { months } from "../../helpers/months";
+import { styles } from "./customize";
+import { Button } from "@mui/material";
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
-import {DatePickerApp} from "../DatePickerApp";
-import {months} from "../../helpers/months";
-import {useDispatch, useSelector} from "react-redux";
-import './Header.scss';
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
-import {actions as modalActions} from "../../features/modal";
+import './Header.scss';
+
 
 
 export const Header = ({ prevMonth, nextMonth, today }) => {

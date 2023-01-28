@@ -1,6 +1,6 @@
-import {Day} from "../Day";
+import { memo } from "react";
+import { Day } from "../Day";
 import './Month.scss';
-import {memo} from "react";
 
 export const Month = memo(({ month }) => {
   return (

@@ -7,6 +7,7 @@
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@hassanmojab/react-modern-calendar-datepicker": "^3.1.7",
+    "@mate-academy/eslint-config": "0.0.20",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.6",
     "@mui/x-date-pickers": "^5.0.15",
@@ -52,7 +53,16 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/eslint-parser": "^7.19.1",
+    "@babel/preset-react": "^7.18.6",
+    "eslint": "^8.32.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import-quotes": "0.0.1",
+    "eslint-plugin-react": "^7.32.1",
     "gh-pages": "^5.0.0",
+    "prettier": "2.8.3",
     "sass": "^1.57.1"
   }
 }

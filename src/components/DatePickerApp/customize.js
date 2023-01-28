@@ -5,10 +5,10 @@ export const styles = {
     border: 0,
     cursor: 'pointer',
   },
-  
+
   icon: {
     maxWidth: '32px',
     maxHeight: '32px',
     color: '#757575',
-  }
+  },
 };

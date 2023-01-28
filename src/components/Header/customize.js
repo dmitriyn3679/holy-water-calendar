@@ -5,11 +5,11 @@ export const styles = {
     minWidth: '32px',
     minHeight: '32px',
   },
-  
+
   eventButton: {
     borderRadius: '50%',
   },
-  
+
   currentMonth: {
     maxWidth: '100px',
     minWidth: '100px',

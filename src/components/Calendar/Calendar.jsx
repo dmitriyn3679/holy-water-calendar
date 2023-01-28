@@ -1,12 +1,13 @@
-import {getMonth} from "../../helpers/getCurrentMonth";
-import {Month} from "../Month";
-import {Header} from "../Header";
+import { useMemo } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { Month } from "../Month";
+import { Header } from "../Header";
+import { CustomModal } from "../CustomModal";
+import { initialDate } from "../../helpers/initialDate";
+import { getMonth } from "../../helpers/getCurrentMonth";
+import { actions } from "../../features/date";
 import './Calendar.scss';
-import {useDispatch, useSelector} from "react-redux";
-import {actions} from "../../features/date";
-import {initialDate} from "../../helpers/initialDate";
-import {CustomModal} from "../CustomModal";
-import {useMemo} from "react";
+
 
 export const Calendar = () => {
   const visibleDate = useSelector(state => state.date);

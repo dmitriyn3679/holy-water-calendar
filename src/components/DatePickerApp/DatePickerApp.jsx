@@ -1,15 +1,14 @@
-import React from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { styles } from "./customize";
 import DatePicker from "@hassanmojab/react-modern-calendar-datepicker";
-import "react-modern-calendar-datepicker/lib/DatePicker.css";
-import {styles} from "./customize";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import {useDispatch, useSelector} from "react-redux";
+import "react-modern-calendar-datepicker/lib/DatePicker.css";
 import {actions} from "../../features/date";
 
 export const DatePickerApp = () => {
+  const dispatch = useDispatch();
   const visibleDate = useSelector(state => state.date)
   const preparedDate = {...visibleDate, month: visibleDate.month + 1}
-  const dispatch = useDispatch();
   
   const selectDate = (date) => {
     dispatch(actions.selectDate({
@@ -22,7 +21,6 @@ export const DatePickerApp = () => {
   const renderCustomInput = ({ ref }) => (
     <button
       ref={ref}
-      placeholder="I'm a custom input"
       style={styles.button}
     >
       <CalendarMonthIcon fontSize='large' sx={styles.icon} />
