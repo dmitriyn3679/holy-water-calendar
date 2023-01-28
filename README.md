@@ -16,8 +16,8 @@ UI Library: Material UI v5.11.6
     - Save
 
 
-3. To update event
+3. To update or delete event
     - click on the event
     - change data in the form
-    - Update
+    - Update / Delete
 
