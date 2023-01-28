@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/tets-app/static/css/main.69cc488d.css",
+    "main.js": "/tets-app/static/js/main.ca2d3b9b.js",
+    "index.html": "/tets-app/index.html",
+    "main.69cc488d.css.map": "/tets-app/static/css/main.69cc488d.css.map",
+    "main.ca2d3b9b.js.map": "/tets-app/static/js/main.ca2d3b9b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69cc488d.css",
+    "static/js/main.ca2d3b9b.js"
+  ]
+}
