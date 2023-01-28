@@ -2,7 +2,7 @@
 
 [DEMO](https://dmitriyn3679.github.io/holy-water-calendar/)
 
-Stack: React / JS / Redux toolkit / HTML / CSS / SCSS
+Stack: React / JS / Redux toolkit / HTML / CSS / SCSS / 
 UI Library: Material UI v5.11.6
 
 1. To navigate in calendar:
