@@ -1,8 +1,8 @@
-import { memo } from "react";
+import React from 'react';
 import { Day } from "../Day";
 import './Month.scss';
 
-export const Month = memo(({ month }) => {
+export const Month = React.memo(function Month({ month }) {
   return (
     <div className="month">
       {month.map((week) => (

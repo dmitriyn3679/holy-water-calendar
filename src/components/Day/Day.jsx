@@ -12,7 +12,7 @@ export const Day = ({ date }) => {
   const events = useSelector(state => state.events);
   const today = dayjs().format('DD.MM.YYYY');
   const weekday = new Date(date)
-    .toLocaleString('en-US', {weekday: 'short'});
+    .toLocaleString('en-US', { weekday: 'short' });
   
   const currentEvent = useMemo(() => {
     return events.filter(event => {
