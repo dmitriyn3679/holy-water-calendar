@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/tets-app/static/css/main.69cc488d.css",
-    "main.js": "/tets-app/static/js/main.8f07baf7.js",
-    "index.html": "/tets-app/index.html",
-    "main.69cc488d.css.map": "/tets-app/static/css/main.69cc488d.css.map",
-    "main.8f07baf7.js.map": "/tets-app/static/js/main.8f07baf7.js.map"
+    "main.css": "/holy-water-calendar/static/css/main.69cc488d.css",
+    "main.js": "/holy-water-calendar/static/js/main.8f07baf7.js",
+    "index.html": "/holy-water-calendar/index.html",
+    "main.69cc488d.css.map": "/holy-water-calendar/static/css/main.69cc488d.css.map",
+    "main.8f07baf7.js.map": "/holy-water-calendar/static/js/main.8f07baf7.js.map"
   },
   "entrypoints": [
     "static/css/main.69cc488d.css",
